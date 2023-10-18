@@ -7,6 +7,9 @@
     <title>cs-OS: One Stop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        
+    </style>
 
 </head>
 
@@ -32,7 +35,9 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item"><a class="dropdown-item" href="#">What is GATE?</a></li>
-                            <li class="nav-item"><hr class="dropdown-divider"></li>
+                            <li class="nav-item">
+                                <hr class="dropdown-divider">
+                            </li>
                             <li class="nav-item"><a class="dropdown-item" href="#">Algorithm</a></li>
                             <li class="nav-item"><a class="dropdown-item" href="#">Data Structure</a></li>
                             <li class="nav-item"><a class="dropdown-item" href="#">Operating System</a></li>
@@ -42,10 +47,12 @@
                             <li class="nav-item"><a class="dropdown-item" href="#">Computer Networks</a></li>
                             <li class="nav-item"><a class="dropdown-item" href="#">Computer Architecture</a></li>
                             <li class="nav-item"><a class="dropdown-item" href="#">Digital System</a></li>
-                            <li class="nav-item"><a class="dropdown-item" href="#">Eng. Mathematics</a>
-                            
+                            <li class="nav-item"><a class="dropdown-item" href="#">Engineering Mathematics</a>
+
                             </li>
-                            <li class="nav-item"><hr class="dropdown-divider"></li>
+                            <li class="nav-item">
+                                <hr class="dropdown-divider">
+                            </li>
                             <li class="nav-item"><a class="dropdown-item" href="#">Test Series</a>
 
                         </ul>
@@ -61,11 +68,20 @@
 
                         </ul>
                     </li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Engineering</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">System Design</a></li>
+                            <li><a href="#" class="dropdown-item">Architecture</a></li>
+                            <li><a href="#" class="dropdown-item">Programming Protocols(Clean Code, Uncle Bob)</a></li>
+                        </ul>
+                        </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Subscription</a>
+                        <a class="nav-link disabled" href="#">Subscription<span class="position-absolute top-0 badge bg-info
+                            rounded-pill">new</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link mx-4" href="#">About</a>
                     </li>
 
                 </ul>
@@ -78,6 +94,51 @@
             </div>
         </div>
     </nav>
+
+    <!-- caraousel components -->
+    <!-- div for main container -->
+    <div class="carousel slide carousel-fade" id="carId" data-bs-ride="carousel">
+
+        <!-- slides -->
+        <div class="carousel-inner">
+            <!-- slide 1 -->
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="https://source.unsplash.com/1400x400/?mathematics,algorithm,computers,hardware" class="d-block w-100" alt="img">
+                <div class="carousel-caption">
+                    <h1>GATE</h1>
+                    <p>Crack GATE with US</p>
+                </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="carousel-item" data-bs-interval="2500"> 
+                <img src="https://source.unsplash.com/1400x400/?technology,coding,Android,Engineering" class="d-block w-100" alt="img">
+                <div class="carousel-caption">
+                    <h1>Coding</h1>
+                    <p>Become A Top Notch coder</p>
+                </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="https://source.unsplash.com/1400x400/?technology,Programming,ios,Engineering" class="d-block w-100" alt="img">
+                <div class="carousel-caption">
+                    <h1>Engineering</h1>
+                    <p>Engineering is not just about coding.</p>
+                </div>
+            </div>
+        </div>
+        <!-- indicators -->
+        <div class="carousel-indicators">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carId" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carId" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            
+        </div>
+        <div></div>
+        <!-- controls -->
+    </div>
+
 
     <div class="container-fluid bg-warning">hi</div>
 
