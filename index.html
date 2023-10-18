@@ -152,76 +152,32 @@
     </div>
 
     <!-- testing grid system -->
-    <!-- basic grid -->
-    <div class="container text-center">
-        <div class="row bg-success">
-            <div class="col border">col1</div>
-            <div class="col border">col2</div>
-        </div>
-        <div class="row bg-info">
-            <div class="col-xs border">col1 xs</div>
-            <div class="col-sm border">col2 sm</div>
-            <div class="col-md border">col3 md</div>
-            <div class="col-lg border">col4 lg</div>
-            <div class="col-xl border">col5 xl</div>
-            <div class="col-xxl border">col6 xxl</div>
-            <div class="col border">col7</div>
-            <div class="col border">col8</div>
-            <div class="col border">col9</div>
-            <div class="col border">col10</div>
-            <div class="col border">col11</div>
-            <div class="col border">col12</div>
-            <!-- read and experiment -->
-            <!-- https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp -->
-            <!-- 
-                The Bootstrap grid system has four classes:
-                 xs (for phones - screens less than 768px wide)
-                 sm (for tablets - screens equal to or greater than 768px wide)
-                 md (for small laptops - screens equal to or greater than 992px wide)
-                 lg (for laptops and desktops - screens equal to or greater than 1200px wide)
-
-                 note: The classes above can be combined to create more dynamic and flexible layouts.
-
-                 Tip: Each class scales up, so if you wish to set the same widths for xs screen and sm screen, 
-                 you only need to specify xs. 
-
-             -->
-        </div>
-        <h1>Equal grid</h1>
+    <!-- stacking concept -->
+    <div class="container-fluid">
+        <h1>Grid</h1>
+        <p>This example demonstrates a 50%/50% split on small, medium and large devices. On extra small devices, it will
+            stack (100% width).</p>
+        <p>Resize the browser window to see the effect.</p>
         <div class="row">
-            <div class="col-sm-6 border">col sm</div>
-            <div class="col-sm-6 border">col sm</div>
-            <div class="col-sm-6 border">col sm</div>
-        </div>
-        <div class="row">
-            <div class="col-xs border">col xs</div>
-            <div class="col-xs border">col xs</div>
-            <div class="col-xs border">col xs</div>
+            <div class="col-sm-6" style="background-color:yellow;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.<br>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </div>
+            <div class="col-sm-6" style="background-color:pink;">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+
+            </div>
         </div>
     </div>
+    <!-- note:
+       Tip: The numbers in the .col-sm-* classes indicates how many columns the div should span (out of 12).
+       So, .col-sm-1 spans 1 column, .col-sm-4 spans 4 columns, .col-sm-6 spans 6 columns, etc.
 
-    <!-- basic structure of grid system
-    
-    
-<div class="container">
-  <div class="row">
-    <div class="col-*-*"></div>
-    <div class="col-*-*"></div>
-  </div>
-  <div class="row">
-    <div class="col-*-*"></div>
-    <div class="col-*-*"></div>
-    <div class="col-*-*"></div>
-  </div>
-  <div class="row">
-    ...
-  </div>
-</div>
-Note: So, to create the layout you want, create a container (<div class="container">). 
-    Next, create a row (<div class="row">). Then, add the desired number of columns 
-    (tags with appropriate .col-*-* classes). Note that numbers in .col-*-* should always 
-    add up to 12 for each row. 
--->
+       Note: Make sure that the sum always adds up to 12!
+    -->
 
 
     <!-- js bundle, popper,bootsrap -->
