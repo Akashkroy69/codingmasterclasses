@@ -8,15 +8,46 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-    .carousel-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom right, rgba(255, 5, 213, 0),rgba(213, 2, 250, 0.7));
-    /*
+        /* Explanation of following code: 
+        This CSS code is used to create a background overlay effect for elements with the class .carousel-item. It utilizes the
+        ::before pseudo-element to add a layer on top of these elements. Here's a breakdown of the code:
+
+    .carousel-item::before - This selector targets the ::before pseudo-element of elements with the class .carousel-item.
+
+    content: ""; - The content property is set to an empty string. This is a required property for pseudo-elements, but since 
+    it's empty, it doesn't add any content to the page. Instead, this pseudo-element is used purely for styling.
+
+    position: absolute; - The ::before pseudo-element is positioned absolutely within the parent element (.carousel-item), meaning 
+    it's placed relative to the nearest positioned ancestor.
+
+    top: 0; and left: 0; - These properties position the top-left corner of the pseudo-element at the top-left corner of its parent 
+    .carousel-item.
+
+    width: 100%; and height: 100%; - These properties set the width and height of the pseudo-element to cover 
+    the entire area of its parent, effectively creating an overlay that spans the entire .carousel-item.
+
+    background: linear-gradient(to bottom right, rgba(255, 5, 213, 0), rgba(213, 2, 250, 0.7)); - This line specifies 
+    the background of the pseudo-element. It creates a gradient background using the linear-gradient function. The gradient
+     is defined to start from the top-left corner (from to bottom right) and consists of two colors.
+        rgba(255, 5, 213, 0) is a transparent color (alpha value 0) that represents the starting color (fully transparent).
+        rgba(213, 2, 250, 0.7) is a semi-transparent color (alpha value 0.7) that represents the ending color.
+
+The result is that the pseudo-element creates a gradient overlay on top of the .carousel-item, 
+making its background visually distinct while maintaining some transparency so that the underlying
+ content is still partially visible. This is often used in carousels or sliders to enhance the 
+ visibility of text or other content on top of images.
+        
+        
+        */
+        .carousel-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom right, rgba(255, 5, 213, 0), rgba(213, 2, 250, 0.7));
+            /*
     Note on Psuedo element: after and before:-
     A CSS pseudo-element is used to style specified parts of an element.
     
@@ -29,8 +60,7 @@
  
     
     */
-}
-
+        }
     </style>
 
 </head>
@@ -97,7 +127,7 @@
                             <li><a href="#" class="dropdown-item">Architecture</a></li>
                             <li><a href="#" class="dropdown-item">Programming Protocols(Clean Code, Uncle Bob)</a></li>
                         </ul>
-                        </li>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Subscription<span class="position-absolute top-0 badge bg-info
                             rounded-pill">new</span></a>
@@ -125,15 +155,17 @@
         <div class="carousel-inner">
             <!-- slide 1 -->
             <div class="carousel-item active" data-bs-interval="4000">
-                <img src="https://source.unsplash.com/1400x400/?mathematics,algorithm,computers,hardware" class="d-block w-100" alt="img">
+                <img src="https://source.unsplash.com/1400x400/?mathematics,algorithm,computers,hardware"
+                    class="d-block w-100" alt="img">
                 <div class="carousel-caption">
                     <h1>GATE</h1>
                     <p>Crack GATE with US</p>
                 </div>
             </div>
             <!-- slide 2 -->
-            <div class="carousel-item" data-bs-interval="2500"> 
-                <img src="https://source.unsplash.com/1400x400/?technology,coding,Android,Engineering" class="d-block w-100" alt="img">
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="https://source.unsplash.com/1400x400/?technology,coding,Android,Engineering"
+                    class="d-block w-100" alt="img">
                 <div class="carousel-caption">
                     <h1>Coding</h1>
                     <p>Become A Top Notch coder</p>
@@ -141,7 +173,8 @@
             </div>
             <!-- slide 3 -->
             <div class="carousel-item" data-bs-interval="2500">
-                <img src="https://source.unsplash.com/1400x400/?technology,Programming,ios,Engineering" class="d-block w-100" alt="img">
+                <img src="https://source.unsplash.com/1400x400/?technology,Programming,ios,Engineering"
+                    class="d-block w-100" alt="img">
                 <div class="carousel-caption">
                     <h1>Engineering</h1>
                     <p>Engineering is not just about coding.</p>
@@ -151,11 +184,12 @@
         <!-- indicators -->
         <div class="carousel-indicators">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carId" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carId" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carId" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-            
+            </div>
+
         </div>
         <div></div>
         <!-- controls -->
