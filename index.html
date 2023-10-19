@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-    .carousel-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom right, rgba(234, 1, 255, 0.1),rgba(234,1,255,0.7));
-}
-
+        .carousel-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom right, rgba(234, 1, 255, 0.1), rgba(234, 1, 255, 0.7));
+        }
     </style>
 
 </head>
@@ -84,7 +83,7 @@
                             <li><a href="#" class="dropdown-item">Architecture</a></li>
                             <li><a href="#" class="dropdown-item">Programming Protocols(Clean Code, Uncle Bob)</a></li>
                         </ul>
-                        </li>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Subscription<span class="position-absolute top-0 badge bg-info
                             rounded-pill">new</span></a>
@@ -112,44 +111,92 @@
         <div class="carousel-inner">
             <!-- slide 1 -->
             <div class="carousel-item active" data-bs-interval="4000">
-                <img src="https://source.unsplash.com/1400x400/?mathematics,science,computers,hardware" class="d-block w-100" alt="img">
+                <img src="https://source.unsplash.com/1400x400/?mathematics,science,computers,hardware"
+                    class="d-block w-100" alt="img">
                 <div class="carousel-caption">
                     <h1>GATE</h1>
                     <p>Crack GATE with US</p>
+                    <button class="btn btn-danger">Explore GATE</button>
                 </div>
             </div>
             <!-- slide 2 -->
-            <div class="carousel-item" data-bs-interval="2500"> 
-                <img src="https://source.unsplash.com/1400x400/?technology,coding,Android,Engineering" class="d-block w-100" alt="img">
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="https://source.unsplash.com/1400x400/?technology,coding,Android,Engineering"
+                    class="d-block w-100" alt="img">
                 <div class="carousel-caption">
                     <h1>Coding</h1>
                     <p>Become A Top Notch coder</p>
+                    <button class="btn btn-warning">Explore Coding</button>
+
                 </div>
             </div>
             <!-- slide 3 -->
             <div class="carousel-item" data-bs-interval="2500">
-                <img src="https://source.unsplash.com/1400x400/?technology,Programming,ios,Engineering" class="d-block w-100" alt="img">
+                <img src="https://source.unsplash.com/1400x400/?technology,Programming,ios,Engineering"
+                    class="d-block w-100" alt="img">
                 <div class="carousel-caption">
                     <h1>Engineering</h1>
                     <p>Engineering is not just about coding.</p>
+                    <button class="btn btn-info">Explore Engineering</button>
+
                 </div>
             </div>
         </div>
         <!-- indicators -->
-        <div class="carousel-indicators">
+        <div class="carousel-indicators my-1">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carId" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carId" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carId" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-            
+            </div>
+
         </div>
         <div></div>
         <!-- controls -->
     </div>
+    <div class="row m-2" style="background-color: rgb(178, 245, 245);">
+        <div class="col-lg-4" style="background-color: rgb(236, 117, 117);">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <image xlink:href="https://source.unsplash.com/140x140/?books" x="0" y="0" width="100%" height="100%" />
+            </svg>
+            <h2 class="fw-normal">Heading</h2>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the
+                first column.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4" style="background-color: rgb(254, 254, 139);">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <image xlink:href="https://source.unsplash.com/140x140/?code" x="0" y="0" width="100%" height="100%" />
+
+            </svg>
+            <h2 class="fw-normal">Heading</h2>
+            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
+                column.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4" style="background-color: rgb(147, 244, 167);">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <image xlink:href="https://source.unsplash.com/140x140/?hardware" x="0" y="0" width="100%" height="100%" />
+
+            </svg>
+            <h2 class="fw-normal">Heading</h2>
+            <p>And lastly this, the third column of representative placeholder content.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div>
 
 
-    <div class="container-fluid bg-warning">hi</div>
+
 
 
     <!-- js bundle, popper,bootsrap -->
@@ -162,6 +209,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+    <script>
+        var todayDate = new Date().getDate();
+        document.getElementById("todateId").innerHTML = todayDate + "/" + new Date().getMonth();
+
+    </script>
 </body>
 
 </html>
